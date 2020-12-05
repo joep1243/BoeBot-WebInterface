@@ -30,14 +30,17 @@ include_once '../views/modals/Warning.php';
         $diff = strtotime(date("Y-m-d h:i:sa")) - strtotime($Log['updated_at']);
 
         if($diff < 300){
-            print "Bot is Online";
+            print 'Bot is Online';
+            print '.#8FE58F';
             //return "Bot is Online";
         }else{
-            print "Bot is Ofline";
+            print 'Bot is Ofline';
+            print '.#F68282';
             //return "Bot is Ofline";
         }
     }else{
-        print "Bot is Ofline";
+        print 'Bot is Ofline';
+        print '.#F68282';
         //return "Bot is Ofline";
     }
 

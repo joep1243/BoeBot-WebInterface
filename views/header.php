@@ -29,7 +29,7 @@ $User->LoginCheck($AKEY);
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
-        $x =''; 
+        var x; 
             function update() {
                     $.ajax({
                         //  cache: false,
@@ -39,19 +39,17 @@ $User->LoginCheck($AKEY);
                         data: 'action=call',
                         success: function (x, status, xhr)
                             {
-                                console.log(x);
-                                document.getElementById('botonl').innerHTML =x;
+                                var name = x.split(".")[0];
+                                var color = x.split(".")[1];
+
+                                document.getElementById('botonl').innerHTML =name;
+
+                                document.getElementById('botonl').style.background =color;
+
                             }
                     });
-                 
-                if (x == 'Bot is Online') {
-                    document.getElementById('botonl').style.background = '#8FE58F';
-                    //console.log('groen');
-                } else if(x == 'Bot is Ofline') {
-                    document.getElementById('botonl').style.background = "#F68282";
-                   // console.log('rood');
-                }
             }
+        
 
             $(document).ready(update); // Call on page load
             //                ^^^^^^
@@ -64,7 +62,7 @@ $User->LoginCheck($AKEY);
 <div class='container-fluid' style="border-bottom:solid 1.5px #eee; height:50px;">
     <div class='container' style="padding: 0 auto;">
         <?php echo '<a id="btnNav" href="../home.php/?KEY='.$key.'"> Home </a>';?>
-        <a id="botonl">bot</a>  
+        <div id="botonl">Bot</div>  
     </div>
 </div>
 
