@@ -1,0 +1,133 @@
+:root{
+    --hover-line-color: -webkit-linear-gradient(left, #ffd92f 50%,#ffd92f 50%,#204d73 50%,#204d73 50%);
+}
+
+.row pt-3 {
+    padding-left: 5;
+    padding-right: 5;
+}
+
+#btnWijzig {
+    margin-right: 7px;
+}
+
+#tableVragenDimensie {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#rowMaxCharacters {
+    white-space: nowrap;
+    width: 440px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*#colMaxCharactersInDimension {
+    white-space: nowrap;
+    width: 440px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}*/
+
+#titleHeaderVragenOverzicht {
+    margin-left: -1575px;
+}
+
+#dmi{
+    padding-top: 20%;
+    padding-bottom: auto;
+
+}
+
+#botonl{
+    float: right;
+    background-color: white;
+    border:solid .5px #204d73; 
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 15px;
+}
+
+#ADD{
+    margin: 125px 705px;
+
+}
+
+#pagetitel{
+    padding-bottom: 2%;
+
+}
+
+#btnNav{
+    float: right;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 15px;
+}
+#btnNav:hover{
+    float: right;
+    background-color: white;
+    border-bottom: solid 1px var(--main-bg-color);
+    color: #204d73;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 15px;
+}
+
+#wmnaam{
+    float: right;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 15px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+    @font-face {
+        font-family: "Lato";
+        src: url('698242188-Lato-Bla.eot');
+        src: url('698242188-Lato-Bla.eot?#iefix') format('embedded-opentype'),
+        url('698242188-Lato-Bla.svg#Lato Black') format('svg'),
+        url('698242188-Lato-Bla.woff') format('woff'),
+        url('698242188-Lato-Bla.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+.dbtn {
+    border:solid .5px #204d73; 
+    height: 250px; 
+    margin: 20px;
+}
+
+.dbtn1 {background-color: #71A1E8;}
+.dbtn2 {background-color: #61DE7E;}
+.dbtn3 {background-color: #F68282;}
+.dbtn4 {background-color: #9393A2;}
+
+
+.modalVraagInput {
+    font-size: 16pt;
+    height: 30%;
+    width : 100%;
+}
+
+
