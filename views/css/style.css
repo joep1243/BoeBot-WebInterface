@@ -41,9 +41,10 @@
 }
 
 .diagnoseALL{
-    border:solid .5px black; 
-    padding-bottom:75%;
+    border:solid .5px black;
+    padding-bottom:3%;
     position: relative;
+    background-color: white;
 }
 
 .diagnoseITEM{
@@ -56,6 +57,13 @@
     align-items:center;
     justify-content:center;
     text-align: center;
+}
+
+.formItems{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+
 }
 
 #ITEMtext{
@@ -88,7 +96,7 @@
 #btnNav{
     float: right;
     background-color: white;
-    border: none;
+    border:solid .5px #204d73; 
     color: black;
     padding: 5px 10px;
     text-align: center;
@@ -122,6 +130,7 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    background-color: #F5F5F5;
 }
 
     @font-face {

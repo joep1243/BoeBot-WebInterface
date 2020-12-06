@@ -52,6 +52,7 @@ $User->LoginCheck($AKEY);
                             }
                     });
             }
+
         
             $(document).ready(update); // Call on page load
             //                ^^^^^^

@@ -8,18 +8,11 @@ include("../controller/diagnose.php");
   <h2 id="pagetitel"> Diagnose </h2>
   <form method="post">
       <div class="diagnoseALL">
-      <div class="container">
-          
-          
+      <div class="container">   
 
         <?php
             $diagnostics = json_decode(getdiagnose(), true);
-            
 
-            //print_r(array_keys($diagnostics));
-
-            //print_r($diagnostics['led']);
-            //print_r(json_decode(array_keys($diagnostics)));
 
             foreach($diagnostics AS $diagnostic => $item){
                 if($item == 'true'){
@@ -32,14 +25,9 @@ include("../controller/diagnose.php");
 
                 print'<div class="diagnoseITEM" style="background-color:'.$color.';"><a id="ITEMtext">'.$diagnostic.'</a></div>';
 
-
-
-
             }
-
     	?>
-
-</div>
+        </div>
       </div>
   </form>
 </div>
