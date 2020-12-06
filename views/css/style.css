@@ -40,6 +40,29 @@
 
 }
 
+.diagnoseALL{
+    border:solid .5px black; 
+    padding-bottom:75%;
+    position: relative;
+}
+
+.diagnoseITEM{
+    border:solid .5px black; 
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 80px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+}
+
+#ITEMtext{
+    font-size: 65px;
+    font-weight: bold;
+}
+
 #botonl{
     float: right;
     background-color: white;

@@ -1,5 +1,5 @@
 <?php
-class log{
+class Log{
   
     // database connection and table name
     private $conn;
@@ -31,7 +31,7 @@ class log{
         // execute query
         $stmt->execute();
     
-        return $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $log = $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
 
