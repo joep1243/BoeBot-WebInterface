@@ -1,5 +1,4 @@
 <?php
-// get database connection
 include_once '../models/db.php';
 // instantiate BotAccount object
 include_once '../models/user.php';
@@ -45,7 +44,6 @@ $User->LoginCheck($AKEY);
                                 document.getElementById('botonl').innerHTML =name;
 
                                 document.getElementById('botonl').style.background =color;
-
 
                                 var btnSubmit = document.getElementById("btnSubmit");
 
