@@ -28,24 +28,40 @@ include("../controller/grid.php");
                                 
                                 var rows = x;
                                 var columns = y;
-                                var $row = $("<div />", {
-                                    class: 'gridrow'
-                                });
-                                var $square = $("<div />", {
-                                    class: 'gridsquare'
-                                });
+                                
+                                
 
                                 $(document).ready(function () {
                                     $("#grid").empty();
-                                    
-                                    //add columns to the the temp row object
-                                    for (var i = 0; i < columns; i++) {
-                                        $row.append($square.clone());
-                                    }
+
                                     //clone the temp row object with the columns to the wrapper
                                     for (var i = 0; i < rows; i++) {
+                                        if(i == lx){console.log('ja2');}
+
+                                            var $row = $("<div />", {
+                                            class: 'gridrow',
+                                            id: i
+                                            });
+                                            
+                                            $row.append($square.clone());
+                                        
+                                    }
+
+                                    //add columns to the the temp row object
+                                    for (var i = 0; i < columns; i++) {
+                                        if(i == ly){console.log('ja1');}
+
+                                        var $square = $("<div />", {
+                                        class: 'gridsquare',
+                                        id: i
+                                        });
+
+                                        
                                         $("#grid").append($row.clone());
                                     }
+                                    
+
+                                    
                                 });
 
                             }
