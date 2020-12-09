@@ -47,6 +47,15 @@
     background-color: white;
 }
 
+.gridbox{
+    justify-content: center;
+    border:solid .5px black;
+    padding-bottom:3%;
+    position: relative;
+    background-color: white;
+
+}
+
 .diagnoseITEM{
     border:solid .5px black; 
     margin-top: 3%;
@@ -162,4 +171,55 @@ body{
     width : 100%;
 }
 
+#grid {
+    margin-top: 100px;
+    margin-left: 12%;
+    margin-right: 12%;
+    align-items:center;
+    justify-content:center;
+    justify-self: center;
 
+    background: #000000;
+}
+
+.gridrow {
+    width: auto;
+    height: 30px;
+
+    background: white;
+}
+
+.gridsquare {
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    
+    border: 2px solid black;
+    border-radius: 50%;
+    
+    display: inline-block;
+    float: left;
+    background: white;
+}
+
+
+
+
+.BTNLgrid{
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 60px;
+padding-right: 60px;
+margin-top: 5%;
+margin-left: 18%;
+
+}
+.BTNRgrid{
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 60px;
+padding-right: 60px;
+margin-top: 5%;
+margin-left: 13%;
+    
+}

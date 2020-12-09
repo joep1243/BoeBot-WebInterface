@@ -45,8 +45,6 @@ $User->LoginCheck($AKEY);
 
                                 document.getElementById('botonl').style.background =color;
 
-                                var btnSubmit = document.getElementById("btnSubmit");
-
                             }
                     });
             }

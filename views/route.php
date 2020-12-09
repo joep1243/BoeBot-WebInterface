@@ -70,7 +70,7 @@ ob_flush();
                 </div>
                 <div class="form-group">
                 <input class="btn btn-secondary" type="submit" name="update" value="Update">
-                <input class="btn btn-success" type="submit" name="Start" value="Start">
+                <?php echo '<a class="btn btn-success" href="../grid.php/?KEY='.$key.'" name="Start" value="Start">Start</a>'; ?>
                 </div>
         </form>
         </div>
