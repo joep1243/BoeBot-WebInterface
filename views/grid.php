@@ -20,12 +20,6 @@ include("../controller/grid.php");
                                 var lx = xy.split("/")[0];
                                 var ly = xy.split("/")[1];
 
-                                console.log(lx);
-                                console.log(ly);
-
-                                
-
-                                
                                 var rows = x;
                                 var columns = y;
                                 
@@ -34,34 +28,39 @@ include("../controller/grid.php");
                                 $(document).ready(function () {
                                     $("#grid").empty();
 
+
+
                                     //clone the temp row object with the columns to the wrapper
                                     for (var i = 0; i < rows; i++) {
-                                        if(i == lx){console.log('ja2');}
 
                                             var $row = $("<div />", {
                                             class: 'gridrow',
                                             id: i
                                             });
-                                            
-                                            $row.append($square.clone());
+
+                                           
+
+                                            //add columns to the the temp row object
+                                            for (var t = 0; t < columns; t++) {
+
+                                                if(t == ly && i == lx){
+
+                                                    var $square = $("<div />", {
+                                                        class: 'gridsquare',
+                                                        id: t,
+                                                        style: 'background: red;'
+                                                    });
+                                                }else{var $square = $("<div />", {
+                                                class: 'gridsquare',
+                                                id: t
+                                                });}
+                                                $row.append($square.clone());
+                                            }
+
+                                            $("#grid").append($row.clone());
                                         
                                     }
-
-                                    //add columns to the the temp row object
-                                    for (var i = 0; i < columns; i++) {
-                                        if(i == ly){console.log('ja1');}
-
-                                        var $square = $("<div />", {
-                                        class: 'gridsquare',
-                                        id: i
-                                        });
-
-                                        
-                                        $("#grid").append($row.clone());
-                                    }
-                                    
-
-                                    
+          
                                 });
 
                             }
@@ -70,7 +69,7 @@ include("../controller/grid.php");
             $(document).ready(update);
             //       
 
-            //setInterval(update, 3000); //every 10 secs
+            setInterval(update, 3000); //every 10 secs
             //  
 </script>
 <body>
