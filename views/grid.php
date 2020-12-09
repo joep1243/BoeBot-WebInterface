@@ -69,7 +69,7 @@ include("../controller/grid.php");
             $(document).ready(update);
             //       
 
-            setInterval(update, 3000); //every 10 secs
+            //setInterval(update, 3000); //every 10 secs
             //  
 </script>
 <body>
