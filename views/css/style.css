@@ -75,6 +75,13 @@
 
 }
 
+.gridcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 #ITEMtext{
     font-size: 65px;
     font-weight: bold;
@@ -211,7 +218,7 @@ padding-bottom: 30px;
 padding-left: 60px;
 padding-right: 60px;
 margin-top: 5%;
-margin-left: 18%;
+margin-left: 20%;
 
 }
 .BTNRgrid{

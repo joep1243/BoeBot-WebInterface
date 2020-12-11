@@ -48,7 +48,7 @@ include("../controller/grid.php");
                                                     var $square = $("<div />", {
                                                         class: 'gridsquare',
                                                         id: t,
-                                                        style: 'background: red;'
+                                                        style: 'background: green;'
                                                     });
                                                 }else{var $square = $("<div />", {
                                                 class: 'gridsquare',
@@ -76,9 +76,16 @@ include("../controller/grid.php");
 <div class="container">
   <h2 id="pagetitel"> Grid </h2>
   <form method="post">
+
     <div class="gridbox">
+
+    <div class="gridcenter">
+
+    <div id="grid"></div>
+
+    </div>
+
       <div class="formItems">
-          <div id="grid"></div></br>
           <form>
                 <div class="form-group">
                 <input class="btn btn-success BTNLgrid" type="submit" name="Start" value="Start">
