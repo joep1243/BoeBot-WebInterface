@@ -16,9 +16,18 @@ include("../controller/grid.php");
                                 var x = result.split(".")[0];
                                 var y = result.split(".")[1];
                                 var xy = result.split(".")[2];
+                                var begin = result.split(".")[3];
+                                var end = result.split(".")[4];
+
 
                                 var lx = xy.split("/")[0];
                                 var ly = xy.split("/")[1];
+
+                                var sx = begin.split("/")[0];
+                                var sy = begin.split("/")[1];
+
+                                var ex = end.split("/")[0];
+                                var ey = end.split("/")[1];
 
                                 var rows = x;
                                 var columns = y;
@@ -50,10 +59,26 @@ include("../controller/grid.php");
                                                         id: t,
                                                         style: 'background: green;'
                                                     });
-                                                }else{var $square = $("<div />", {
-                                                class: 'gridsquare',
-                                                id: t
-                                                });}
+                                                }else if(t == sy && i == sx){
+                                                    var $square = $("<div />", {
+                                                    class: 'gridsquare',
+                                                    id: t,
+                                                    style: 'background: #3ba1eb;'
+                                                });
+                                                }else if(t == ey && i == ex){
+                                                    var $square = $("<div />", {
+                                                    class: 'gridsquare',
+                                                    id: t,
+                                                    style: 'background: #edd834;'
+                                                });
+                                                }else{
+                                                    var $square = $("<div />", {
+                                                    class: 'gridsquare',
+                                                    id: t
+                                                });
+                                                }
+
+                                                
                                                 $row.append($square.clone());
                                             }
 
@@ -69,7 +94,7 @@ include("../controller/grid.php");
             $(document).ready(update);
             //       
 
-            //setInterval(update, 3000); //every 10 secs
+            setInterval(update, 3000); //every 10 secs
             //  
 </script>
 <body>
@@ -78,7 +103,14 @@ include("../controller/grid.php");
   <form method="post">
 
     <div class="gridbox">
+    <div class="legenda">
+    
+    <a id="legbegin">BEGIN</a>
+    <a id="legeind">EIND</a>
+    <a id="legbot">BOT</a>
 
+
+    </div>
     <div class="gridcenter">
 
     <div id="grid"></div>

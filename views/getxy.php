@@ -21,7 +21,9 @@ include_once '../views/modals/Warning.php';
 
     //str_replace(find,replace,string,count)
     $location = str_replace(".","/" ,$log['location']);
+    $begin = str_replace(".","/" ,$xy['start']);
+    $end = str_replace(".","/" ,$xy['end']);
 
-    print($xy['MAX_X'].'.'.$xy['MAX_Y'].'.'.$location);
+    print($xy['MAX_X'].'.'.$xy['MAX_Y'].'.'.$location.'.'.$begin.'.'.$end);
 
 ?>
