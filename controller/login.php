@@ -5,6 +5,7 @@ include_once '../models/db.php';
   
 // instantiate BotAccount object
 include_once '../models/user.php';
+include_once '../models/command.php';
 
 // instantiate BotAccount object
 include_once '../views/modals/Warning.php';
@@ -21,6 +22,7 @@ function UserLogin($UN, $PW){
     $db = $database->getConnection();
   
     $User = new User($db);
+    $Command = new Command($db);
 
     //destroy session then start a session
     session_start();
@@ -51,6 +53,10 @@ function UserLogin($UN, $PW){
                 $_SESSION['loggedin'] = TRUE;
                 $_SESSION['logged_in'] = time();
                 $_SESSION['KEY'] = $Key;
+
+                $Command->command = 0;
+            
+                $Command->UpdateCommand();
 
                 //send to home page with random key
                header('Location: home.php/?KEY='.$Key.'');
