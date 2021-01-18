@@ -1,0 +1,289 @@
+:root{
+    --hover-line-color: -webkit-linear-gradient(left, #ffd92f 50%,#ffd92f 50%,#204d73 50%,#204d73 50%);
+}
+
+.row pt-3 {
+    padding-left: 5;
+    padding-right: 5;
+}
+
+#btnWijzig {
+    margin-right: 7px;
+}
+
+#tableVragenDimensie {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#rowMaxCharacters {
+    white-space: nowrap;
+    width: 440px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*#colMaxCharactersInDimension {
+    white-space: nowrap;
+    width: 440px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}*/
+
+#titleHeaderVragenOverzicht {
+    margin-left: -1575px;
+}
+
+#dmi{
+    padding-top: 20%;
+    padding-bottom: auto;
+
+}
+
+.diagnoseALL{
+    border:solid .5px black;
+    padding-bottom:3%;
+    position: relative;
+    background-color: white;
+}
+
+.gridbox{
+    justify-content: center;
+    border:solid .5px black;
+    padding-bottom:3%;
+    position: relative;
+    background-color: white;
+    padding-top: 30px;
+
+}
+
+.diagnoseITEM{
+    border:solid .5px black; 
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 80px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+}
+
+.logITEM{
+    border:solid .5px black; 
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 30px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+}
+
+#logITEMtext{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.formItems{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.gridcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#ITEMtext{
+    font-size: 65px;
+    font-weight: bold;
+}
+
+#botonl{
+    float: right;
+    background-color: white;
+    border:solid .5px #204d73; 
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 15px;
+}
+
+#ADD{
+    margin: 125px 705px;
+
+}
+
+#pagetitel{
+    padding-bottom: 2%;
+
+}
+
+
+
+#btnNav{
+    float: right;
+    background-color: white;
+    border:solid .5px #204d73; 
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 15px;
+}
+#btnNav:hover{
+    float: right;
+    background-color: white;
+    border-bottom: solid 1px var(--main-bg-color);
+    color: #204d73;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 15px;
+}
+
+#wmnaam{
+    float: right;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 15px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #F5F5F5;
+}
+
+    @font-face {
+        font-family: "Lato";
+        src: url('698242188-Lato-Bla.eot');
+        src: url('698242188-Lato-Bla.eot?#iefix') format('embedded-opentype'),
+        url('698242188-Lato-Bla.svg#Lato Black') format('svg'),
+        url('698242188-Lato-Bla.woff') format('woff'),
+        url('698242188-Lato-Bla.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+.dbtn {
+    border:solid .5px #204d73; 
+    height: 250px; 
+    margin: 20px;
+}
+
+.dbtn1 {background-color: #71A1E8;}
+.dbtn2 {background-color: #61DE7E;}
+.dbtn3 {background-color: #F68282;}
+.dbtn4 {background-color: #9393A2;}
+
+
+.modalVraagInput {
+    font-size: 16pt;
+    height: 30%;
+    width : 100%;
+}
+
+#grid {
+    margin-top: 30px;
+    margin-left: 12%;
+    margin-right: 12%;
+    align-items:center;
+    justify-content:center;
+    justify-self: center;
+    background: #000000;
+}
+
+.gridrow {
+    width: auto;
+    height: 30px;
+
+    background: white;
+}
+
+.gridsquare {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    
+    border: 2px solid black;
+    border-radius: 50%;
+    
+    display: inline-block;
+    float: left;
+    background: white;
+}
+
+.legenda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#legbegin{
+    margin-right: 10%;
+    font-size: 18pt;
+    font-weight: bold;
+    background-color: #3ba1eb;
+}
+#legeind{
+    font-size: 18pt;
+    font-weight: bold;
+    background-color: #edd834;
+}
+#legbot{
+    margin-left: 10%;
+    font-size: 18pt;
+    font-weight: bold;
+    background-color: green;
+}
+
+
+.BTNLgrid{
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 60px;
+padding-right: 60px;
+margin-top: 1%;
+margin-left: 20%;
+
+}
+
+#log{
+padding-top: 10px;
+padding-left: 485px;
+}
+
+#tablegrid{
+   overflow-y:scroll;
+   height:200px;
+   width: 150px;
+   display: inline-block;
+}
+
+.BTNDIA{
+    margin-left: 5%;
+
+}
+.BTNRgrid{
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 60px;
+padding-right: 60px;
+margin-top: 1%;
+margin-left: 13%;
+    
+}
